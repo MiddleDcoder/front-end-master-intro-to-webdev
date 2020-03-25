@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 for...of Loop and for...in Loop</title>
+</head>
+<body>
+    <h3>JavaScript ES6 for...of Loop and for...in Loop</h3>
+    <script>
+
+    // Iterating over array
+    let letters = ["a", "b", "c", "d", "e", "f"];
+    document.write("for...of loop" + "<br>");
+    for(let letter of letters) {
+        document.write(letter + "<br>"); // a,b,c,d,e,f
+    }
+    document.write("<hr>");
+    document.write("for...in loop"+"<br>");
+    for(let ters in letters){
+    	 document.write(letters[ters] + "<br>"); // a,b,c,d,e,f
+    }
+    document.write("<hr>");
+    document.write("normal for loop"+"<br>");
+    for(let i = 0; i < letters.length; i++){
+     document.write(letters[i] + "<br>"); // a,b,c,d,e,f
+    }
+        
+    document.write("<hr>");
+    
+    // Iterating over string
+    let greet = "Hello World!";
+    
+    for(let character of greet) {
+        document.write(character + "<br>"); // H,e,l,l,o, ,W,o,r,l,d,!
+    }
+
+    document.write("<hr>");
+    document.write("for...in loop" + "<br>");
+    // An object with some properties 
+    var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+     
+    // Loop through all the properties in the object  
+    for(var prop in person) {  
+        document.write("<p>" + prop + " = " + person[prop] + "</p>"); 
+    }
+        document.write("<hr>");    
+        document.write("for...of loop" + "<br>");
+        document.write("Note: The for...of loop doesn't work with objects because they are not iterable. If you want to iterate over the properties of an object you can use the for-in loop.");
+
+
+
+    document.write("<hr>");
+    document.write("While Loop");
+     var i = 1;
+        while(i <= 5) {    
+            document.write("<p>The number is " + i + "</p>");
+            i++;
+}
+  document.write("<hr>");
+document.write("Do While Loop");
+var i = 1;
+do {
+    document.write("<p>The number is " + i + "</p>");
+    i++;
+}
+while(i <= 5);
+
+    </script>
+</body>
+</html>                             

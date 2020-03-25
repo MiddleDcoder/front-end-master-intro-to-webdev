@@ -1,0 +1,528 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"inputImages"
+			],
+			[
+				"sea",
+				"searchValue"
+			],
+			[
+				"inpu",
+				"input-images"
+			],
+			[
+				"redd",
+				"reddit-get"
+			],
+			[
+				"searc",
+				"searchReddit"
+			],
+			[
+				"tex",
+				"text-r"
+			],
+			[
+				"text",
+				"text-r"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"json",
+				"jsonp"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"text-",
+				"text-r"
+			],
+			[
+				"btn-r",
+				"btn-r"
+			],
+			[
+				"pro",
+				"prop"
+			],
+			[
+				"city",
+				"cityObject"
+			],
+			[
+				"cit",
+				"cityObject"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"name",
+				"name-input"
+			],
+			[
+				"alert",
+				"alert-btn"
+			],
+			[
+				"chan",
+				"changeThis"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"bi",
+				"bindFunc"
+			],
+			[
+				"un",
+				"unboundFavorite"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"fruits",
+				"fruitsList"
+			],
+			[
+				"re",
+				"returnedValue"
+			],
+			[
+				"r",
+				"Reserve"
+			],
+			[
+				"fruit",
+				"fruitsList"
+			],
+			[
+				"fr",
+				"fruits"
+			],
+			[
+				"pub",
+				"publicGetName"
+			],
+			[
+				"public",
+				"publicVariable"
+			],
+			[
+				"priv",
+				"privateVariable"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"i",
+				"inline-block\tdisplay"
+			],
+			[
+				"ds",
+				"display\tproperty"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"get",
+				"getFullYear"
+			],
+			[
+				"bak",
+				"background\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "intro-to-webdev-app/app/app.js",
+			"settings":
+			{
+				"buffer_size": 740,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "intro-to-webdev-app/app/public/tweet.js",
+			"settings":
+			{
+				"buffer_size": 732,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "front-endmaster/node-exercises/exercise/app.js",
+			"settings":
+			{
+				"buffer_size": 380,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/front-endmaster",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/front-endmaster/node-exercises"
+	],
+	"file_history":
+	[
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/front-endmaster/node-exercises/exercise/app.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/app/package.json",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/node-exercises/params/package.json",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/node-exercises/params/app.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/front-endmaster/node-exercises/exercise/package-lock.json",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/node-exercises/static-assets/app.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/node-exercises/cheer-jeer/app.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/node-exercises/express/app.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/intro-to-webdev-app/node-exercises/basic/app.js",
+		"/Users/User/Documents/Duotone Dark.terminal",
+		"/Users/User/Downloads/macos-terminal-themes-master/README.md",
+		"/Users/User/Downloads/macos-terminal-themes-master/tools/screenshots_readme.sh",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/javascript.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/jquery-frontendmasters.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-end web development quick start with html, css and javascript/js/jquery.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/js/jquery.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/jquery.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-end web development quick start with html, css and javascript/index.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-end web development quick start with html, css and javascript/js/repositories.json",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-end web development quick start with html, css and javascript/js/jquery-3.2.1.min.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-end web development quick start with html, css and javascript/js/index.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/Javascript in the browser/main.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/Javascript in the browser/mainmodulesystem.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/Javascript in the browser/graphic.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/Javascript in the browser/geometry.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/Javascript in the browser/addins.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/Javascript in the browser/buttons.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/javascript/AJAXlessons.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/javascript/xmlsample.xml",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/javascript/javascript.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-End Web Development Get Started/index.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/javascript-design-patterns.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Web Development  by FrontEnd Masters/introductiontoweb.html",
+		"/Users/User/Documents/assets/untitled.js",
+		"/Users/User/Documents/assets/untitled2.js",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/CreatingResponsivWebDesign/my-responsive-website/css/screen.css",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/CreatingResponsivWebDesign/my-responsive-website/index.html",
+		"/Users/User/Documents/assets/untitled1.js",
+		"/Users/User/Documents/assets/glitter.css",
+		"/Users/User/Documents/Real Estate Assets/untitled.html",
+		"/Users/User/Documents/Real Estate Assets/untitled3.js",
+		"/Users/User/Documents/Real Estate Assets/untitle4.html",
+		"/Users/User/Documents/Real Estate Assets/snippets.html",
+		"/Users/User/Documents/Real Estate Assets/untitled2.html",
+		"/Users/User/Documents/Real Estate Assets/untitled3.html",
+		"/Users/User/Downloads/footer-hooks.php",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/Pluralsight lessons/Front-end web development quick start with html, css and javascript/main.css",
+		"/Users/User/Downloads/divi-100-header-ui-kit/Header Divi Kit.json",
+		"/Users/User/JL FLASHDRIVE FILES/Drive/robinsnest/header.php",
+		"/Users/User/JL FLASHDRIVE FILES/Drive/2Javascript/photo-website/index.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/array.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/javascript.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/Age.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/arraysort.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/lesson.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/activity/ODDandEVEN.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/school lessons/activity/Activity 1.html",
+		"/Users/User/JL FLASHDRIVE FILES/0. Web Developer/1. Front-End Developer and Front-End Wordpress Developer/3. Javascript and Jquery - learn/ASNA - lab -exercise/LabExer2-JLA.html",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Window.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Trail.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Spawn.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/SmartEnemy.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Player.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/MenuParticle.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Menu.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/KeyInput.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/ID.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/HUD.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Handler.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/GameObject.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/Game.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/FasterEnemy.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/FastEnemy.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/EnemyBulletBounce.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/EnemyBossBullet.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/EnemyBoss.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/BounceEnemy.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/BlueEnemy.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Windows game written in java/WaveGame/src/WaveGame/BasicEnemy.java",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Baren Programs/javascript.html",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Baren Programs/arraysort.html",
+		"/Users/User/JL FLASHDRIVE FILES/copied/Baren Programs/array.html",
+		"/Users/User/Desktop/GOING BACK TO PROGRAMMING/1. Front-End Developer and Front-End Wordpress Developer/other files/bitdegree lessons/bootstrap lesssons/css lesson 7.txt"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "intro-to-webdev-app/app/app.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 53.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "intro-to-webdev-app/app/public/tweet.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "front-endmaster/node-exercises/exercise/app.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.178695135518,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "node-lessons-fem.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 169.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

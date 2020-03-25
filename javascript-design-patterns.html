@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JAVSCRIPT DESIGN PATTERNS</title>
+</head>
+<style type="text/css">
+</style>
+<body>
+	<h4>JavaScript web developers frequently interact with design patterns, even unknowingly, when creating applications. In this JavaScript tutorial, I want to discuss of top 10 JavaScript design patterns to expose ways to improve your programming repertoire and dive deeper into the JavaScript internals.</h4>
+	<a href="https://codequs.com/p/Hk5kcjcE8/top-10-javascript-design-patterns-you-should-know/?fbclid=IwAR3ioYCvhqKDeRrI5udm_Q8G-7M7l0FBLInBdTKRf4RK9BhN59YPCMDet9Y"> link source </a>
+
+	<div>
+		<pre>
+<h5>1. The constructor Pattern</h5>
+
+In classical object-oriented programming languages, a constructor is a special method used to initialize a newly created object once the memory has been allocated for it. In JavaScript almost everything is an object, we have most often interested in object constructors. Since object constructors are used to creating specific types of objects, for example, both preparing the object for use and accepting arguments a constructor can use to set the values of member properties and methods when the object is first created.
+
+As we saw know JavaScript does not support the concept of classes, so inside a constructor, the keyword this references the new object that’s being created revisiting object creation, a basic constructor may look as follows:
+
+function Car(model, year, miles) {
+  this.model = model;
+  this.year = year;
+  this.miles = miles;
+}
+
+// Usage:
+var bmw = new Car('M4', '2019', '1000');
+
+
+Read Also: <a href="https://morioh.com/p/fb839c7da909">JavaScript Basics Before You Learn React</a>	
+	</pre>		
+	<div>
+<script type="text/javascript">
+function Car(model, year, miles){
+	this.model = model;
+	this.year = year;
+	this.miles = miles;
+}
+//Usage:
+var bmw = new Car('M4', '2019', '1000');
+</script>
+
+		<div>
+		<pre>
+<h5>2. The module Pattern</h5>
+
+Modules are an integral piece of any robust application’s architecture and typically help in keeping the unit of code for a project cleanly separated and organized
+There are several option for implementing modules. These include:
+
+    Object literal notation
+    The module Pattern
+    AMD modules
+    CommonJS module
+    ECMAScript Harmony modules
+
+Object literals :
+
+var newObject = {
+  variableKey: variableValue,
+  functionKey: function() {
+    //…
+  }
+};
+
+Let’s begin looking at an implementation of the Module pattern by created a module that is self-contained.
+
+var testModule = (function() {
+  var counter = 0;
+  return {
+    incrementCounter: function() {
+      return ++counter;
+    },
+    resetCounter: function() {
+      counter = 0;
+    }
+  };
+})();
+
+// Usage:
+testModule.incrementCounter();
+testModule.resetCounter();
+
+Read Also: <a href="https://morioh.com/p/715b2bc28221">Build a CMS with Laravel and Vue</a>
+		</pre>
+	<div>
+<script type="text/javascript">
+var testModule = (function(){
+	var conter = 0;
+	return {
+		incrementCounter: function(){
+			return ++counter;
+		},
+		resetCounter: function(){
+			counter = 0;
+		}
+	}
+})();
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+var myRevealingModule = (function(){
+	var privateVariable = 'not okay',
+		publicVariable = 'okay';
+		function privateFun(){
+			return privateVariable;
+		}
+
+		function publicSetName(strName){
+			privateVariable = strName;
+		}
+
+		function publicGetName(){
+			privateFun();
+		}
+
+		return{
+			setName: publicSetName,
+			message: publicVariable,
+			getName: publicGetName
+		};
+
+})();
+//Usage;
+myRevealingModule.setName('Marvin King');
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+<h5>3. The Revealing Module Pattern</h5>
+<pre>
+One thing that the revealing module can do is avoiding repeat the name of the main object when we want to call one public method from another or access public variables.
+
+var myRevealingModule = (function() {
+  var privateVariable = 'not okay',
+    publicVariable = 'okay';
+  function privateFun() {
+    return privateVariable;
+  }
+
+  function publicSetName(strName) {
+    privateVariable = strName;
+  }
+
+  function publicGetName() {
+    privateFun();
+  }
+
+  return {
+    setName: publicSetName,
+    message: publicVariable,
+    getName: publicGetName
+  };
+})();
+
+//Usage:
+
+myRevealingModule.setName('Marvin King');
+
+		</pre>
+	<div>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Introduction to Web Development by Front-end masters</title>
+
+</head>
+<style type="text/css">
+	p{
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+
+		margin: 20px 0;
+		text-align: center;
+		background-color: white;
+		padding: 3px 0;
+	}
+
+	body{
+		background-color: lightgray;
+		margin: 0;
+	}
+
+</style>
+<body>
+<h4>JQUERY FRONT-END MASTER STARTER</h4>
+<p class="caption-text"> change this in to Magic!</p>
+
+<input type="text" class="name-input-first" />
+<button class="alert-btn-first" type="button">Alert Me!</button>
+<br/>
+<input type="text" class="name-input" />
+<button class="event-btn" type="button">Click Me!</button>
+<p class="p-change">change this by typing the input and clicking the button</p>
+<pre>
+	.css() - get or updates css values.
+	.html() - set the iner HTML of an element.
+	.show() / .hide() - Display / hides an element.
+	.addClass() / .removeClass - Add or remove a class.
+	.append() - Add an Element to the existing elements in an element.
+</pre>
+
+<h3>AJAX with jQuery</h3>
+<button class="btn"> GET DATA </button>
+<p class="text">Get the data here!</p>
+<br>
+<button class="btn-d"> DISPLAY DATA </button>
+<div class="text-d">Dispaly data here!</div>
+
+<button class="btn-a"> all DATA </button>
+<p class="text-a">All data here!</p>
+
+<h5>Displaying images data from reddit</h5>
+<button class="btn-r"> all DATA </button>
+<p class="text-r">All data here!</p>
+<h5>With Input</h5>
+<input type="text" class="input-images">
+<button class="btn-images"> Get it here the DATA </button>
+<p class="text-images">All Images here!</p>
+
+<script type="text/javascript" src="jquery-3.2.1.min.js">
+</script>
+<script type="text/javascript">
+	 // The ready function is there to say give me your code that you want execute once the document is ready.
+
+    $(document).ready(function () {
+
+var changeThis = $('.caption-text');
+changeThis.text('Magic!').css('background-color', 'orange');
+$('.caption-text').text('Magic!').css('background-color', 'orange');
+// $('.alert-btn').click(function (){
+// 	alert("Hey there!");
+// });
+
+$('.alert-btn-first').click(function (){
+	var nameOne = $('.name-input-first').val();
+	alert("Hey "+nameOne);
+	$('.name-input-first').val('');
+});
+
+
+$('.event-btn').click(function (){
+	var name = $('.name-input').val();
+	var pChange = $('.p-change');
+	pChange.text("This is the changed text now: "+name);
+	$('.name-input').val('');
+});
+
+
+
+//AJAX
+$('.btn').click(function(){
+
+	$('.text').text('loading . . .');
+
+	$.ajax({
+		type:"GET",
+		url:"https://api.meetup.com/2/cities",
+		success: function(data){
+			$('.text').text(JSON.stringify(data));
+		},
+		error: function(data){
+			$('.text').text("ERROR");
+		},
+		dataType: 'jsonp',
+	});
+});
+
+
+//Displaying Data
+$('.btn-d').click(function(){
+
+	$('.text-d').text('loading . . .');
+
+	$.ajax({
+		type: "GET",
+		url:"https://api.meetup.com/2/cities",
+		success: function(data){
+			$('.text-d').html('');
+			for(var i = 0; i< data.results.length; i++){
+				var place = data.results[i].city + ", " + data.results[i].country;
+				// var place = data.results[i].city + ", " + data.results[i].state
+				// data.results[i].state
+				$('.text-d').append('<p>' + place + '</p>');
+			}
+		},
+		dataType: 'jsonp',
+
+	});
+
+});
+
+
+//Displaying All Data
+$('.btn-a').click(function(){
+
+	$('.text-a').text('loading . . .');
+
+	$.ajax({
+		type: "GET",
+		url:"https://api.meetup.com/2/cities",
+		success: function(data){
+			$('.text-a').html('');
+			for(var i = 0; i< data.results.length; i++){
+			
+				var cityObject = data.results[i];
+				var placeTwo = ""; 
+
+					for( var prop in cityObject){
+						if(cityObject.hasOwnProperty(prop)){
+							placeTwo += prop + "-" + cityObject[prop] + " ";
+						}
+					}	
+
+					$('.text-a').append('<p>' + placeTwo + '</p>');
+			}
+						
+		},
+		error: function(data){
+			$('.text').text("ERROR");
+		},
+		dataType: 'jsonp',
+
+	});
+
+});
+
+
+
+//Displaying data from reddit 
+$('.btn-r').click( function(){
+
+	$('.text-r').text('loading . . .');
+
+	var searchReddit = $('.reddit-get').val();
+
+
+	$.ajax({
+		type: "GET",
+		url: "http://www.reddit.com/r/aww/search.json?q=duck&restrict_sr=true",
+		success: function(response){
+			// $('.text-r').text(JSON.stringify(data)); //Displaying the data if it is working
+			$('.text-r').html('');
+			for(var i = 0; i<response.data.children.length; i++){
+				var image = "<img src='" + response.data.children[i].data.thumbnail  + "'/>";
+				$('.text-r').append(image);
+	// for(var i = 0; i<response.data.children.length; i++){
+	// 			var image =  response.data.children[i].data.thumbnail;
+	// 			$('.text-r').append("<img src='" + image +  "'/>");
+
+		}
+	
+	}
+
+});
+
+});
+
+
+
+	//Displaying data from reddit using INPUT and another way
+
+	$('.btn-images').click( function(){
+			$('.text-images').text("loading . . .");
+			var inputImages = $('.input-images').val();
+
+			$.ajax({
+				type: "GET",
+				data: {
+					q: function(){
+						return inputImages;
+
+					},
+					restrict_sr: "true",
+				},
+				url:"https://www.reddit.com/r/aww/search.json",
+				success: function(response){
+			$('.text-images').html('');	
+			$('.input-images').val('');				
+			for(var i = 0; i<response.data.children.length; i++){
+				var photo = "<img src='" + response.data.children[i].data.thumbnail  + "'/>";
+				$('.text-images').append(photo);
+					}
+				}
+
+
+			});
+
+
+
+	});
+
+
+
+
+
+
+
+
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Introduction to Web Development by Front-end masters</title>
+</head>
+<body>
+<script type="text/javascript">
+	document.write("What ever I coded here only the important parts of the lessons the rest are already learned" + "<br/>");
+
+	document.write("Reserve Words" + "<br />" + "case, catch, let, private, with, in, for, this, do" + "<br/>" + "typeof is a javascript function to identify what type of variable or statement"+ "<br/>");
+
+	document.write("Expression can also be use in variable" + "<br/>" +"var name='jhun';" + "<br/>" + "var greeting = 'Hello' + name;" +"<br/>");
+
+
+var fruits = ["a", "b"];
+
+fruits.push('c');
+
+var printList = function(list){
+  for (var i=0; i<list.length; i++){
+    console.log(list[i]);
+  }
+};
+printList(fruits);
+//.push is way to add item in list
+//other way to add array not the last but in the first index is use .unshift(); method/function it will add list in first index
+document.write("<br/>"+".push is way to add item in list"+ "<br/>");
+document.write(fruits);
+document.write("other way to add array not the last but in the first index is use .unshift(); method/function it will add list in first index");
+document.write("<br/>"+"fruits.pop();  .pop(); function is a method to remove an array by index from last to first array"+"<br/>");
+
+
+var apples = 6;
+
+if (apples > 5) {
+	document.write("Eat an Apple");
+}
+else if (apple > 3){
+	document.write("Go to the store.");
+}else{
+	document.write("No Apple left");
+}
+
+document.write("<br/>");
+
+//Iterating over Array
+var fruitsArray = ["Peach", "Orange", "Apple"];
+for (var i=0; i<fruitsArray.length; i++){
+
+	document.write("<br/>");
+	document.write("value of i is: " + i);
+	document.write("<br/>");
+	document.write("the fruit at i is " + fruitsArray[i]);
+}
+document.write("<br/>");
+	//EXERCISE
+	fruitsArray.push("Guava");
+	fruitsArray.push("Durian");
+	fruitsArray = fruitsArray.concat(["orangeRipe", "apricot"]);
+	document.write(fruitsArray);
+
+for (var i = 0; i<fruitsArray.length; i++){
+	document.write(fruitsArray[i]);
+}
+
+
+</script>
+
+<p> functions </p>
+<script type="text/javascript">
+	var fruitsList = ["Peach", "Orange", "Apple"];
+	var printList = function(list){
+		for (var i = 0; i<list.length; i++){
+			document.write(list[i]);
+			document.write("<br>");
+		};
+
+		document.write("These are a few of my favorite things" + "<br>");
+
+	};
+
+printList(fruitsList);
+
+var cars = ["subaru", "tesla", "jeep"];
+
+var iceCreams = ["cookies&creams", "mint"];
+
+printList(cars);
+printList(iceCreams);
+
+
+</script>
+<p>Javascript Closure</p>
+<p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.</p>
+<script type="text/javascript">
+	var drink = "wine";
+
+var foo = function(){
+   var drink = "beer";
+  
+   return function(){
+       return drink;
+   };
+};
+
+
+var bar = foo();
+
+document.write(drink );  //wine
+document.write("<br>");
+document.write( bar() );  //beer
+//lexical scoping, which describes how a parser resolves variable names when functions are nested. 
+document.write("<br>"+"Other Example"+"<br>");
+function init() {
+  var name = 'Mozilla'; // name is a local variable created by init
+  function displayName() { // displayName() is the inner function, a closure
+    document.write(name); // use variable declared in the parent function
+  }
+  displayName();
+}
+init();
+
+</script>
+<script type="text/javascript">
+	
+	function makeFunc() {
+  var name = 'Mozilla';
+  function displayName() {
+   document.write(name)
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+</script>
+<p> functions with validation </p>
+<script type="text/javascript">
+	var fruitsList = ["Peach", "Orange", "Apple"];
+	var printList = function(list){
+
+		if(list.length < 3){
+			return "Not enough elements";
+		}
+
+		return list[0];
+
+	};
+
+var returnedValue = printList(fruitsList);
+document.write(returnedValue);
+
+var cars = ["subaru", "tesla", "jeep"];
+
+var concatListFunc = function(list1, list2){
+	return list1.concat(list2);
+}
+
+
+document.write(printList(cars));
+var iceCreams = ["cookies&creams", "mint"];
+
+printList(cars);
+printList(iceCreams);
+
+
+</script>
+
+
+<p> Javascript Objects and Context</p>
+<script type="text/javascript">
+var favorite = "Tesla Model S";
+
+var person = {
+	favorite: "Nissan Leaf",
+	//context is refering to an object with a function
+	//: Scope pertains to the visibility of variables, and context refers to the object to which a function belongs.
+
+
+	getFave: function(){
+		return this.favorite;
+	}
+};
+
+document.write(person.getFave());
+document.write("<br>");
+var func = person.getFave;
+document.write(func());
+document.write("<br>");
+
+// func.bind(person);
+// document.write(func());
+// document.write("<br>"); //mistake here is that you need to intialize a new variable and call the new variable so that it will bind
+
+var bindFunc = func.bind(person);
+document.write(bindFunc());
+
+document.write("<br>");
+
+var unboundFavorite = person.getFave;
+document.write(unboundFavorite());// The function gets invoked at the global scope
+// Tesla Model S
+document.write("<br>");
+var boundGetFavorite = unboundFavorite.bind(person);
+document.write(boundGetFavorite());
+//Nissan Leaf
+
+</script>
+<p>Anonymous Functions</p>
+<script type="text/javascript">
+	
+	var add = function(a,b){
+		return a + b;
+	}
+
+	var subtract = function(a,b){
+		return a - b;
+	}
+
+	var math = function(a, b, operate) {
+		return operate(a,b);
+	}
+
+document.write(math(1,4,add));
+document.write("<br>");
+document.write(math(5,1,subtract));
+document.write("<br>");
+var answer = math(4,5,function(a,b){ //anonymous function
+	return a * b 
+	// return a * b;
+});
+document.write(answer);
+
+</script>
+
+
+</body>
+</html>
